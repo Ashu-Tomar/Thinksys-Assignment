@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ThinkSys-Assignment</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Londrina+Outline|Londrina+Solid" rel="stylesheet">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css"/>
+</head>
+
+<body>
+<!--<div id="myDiv"></div>-->
+    <ul class="fly-in-text">
+        <li>Q</li>
+        <li>U</li>
+        <li>I</li>
+        <li>N</li>
+        <li>T</li>
+        <li>A</li>
+        <li>I</li>
+        <li>N</li>
+    </ul>
+<script src="./assets/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script>
+        $('.fly-in-text li').on('click', function() {
+            TweenLite.set(this,{transformOrigin:'50% 100% 0px',transformPerspective:"-500px"});
+            TweenLite.from(this,6,{rotationX:-360,opacity:0,ease:Elastic.easeOut.config(1,0.15)});
+        });
+    </script>
+</body>
+
+</html>
